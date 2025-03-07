@@ -1,0 +1,28 @@
+name: Validate Terraform Configuration
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Terraform Validation
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Configure Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.2.4
+      - name: Validate Terraform
+        run: terraform validate
+      - name: Terraform Format Check
+        run: terraform fmt -check -recursive
