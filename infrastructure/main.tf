@@ -1,4 +1,4 @@
-terraform {
+terrafor m {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -8,10 +8,10 @@ terraform {
 }
 
 provider "azurerm" {
-  features {}
+  feature s {}
 }
 
-resource "azurerm_resource_group" "rg" {
+resour ce "azurerm_resource_group" "rg" {
   name     = "HybridA09RG "
   location = "East US"
 }
