@@ -1,0 +1,25 @@
+{
+  "name": "hybrid-a09-terraform-ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimish-gajjar-alg/Hybrid-A09-Terraform-CI-CD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jimish-gajjar-alg/Hybrid-A09-Terraform-CI-CD/issues"
+  },
+  "homepage": "https://github.com/jimish-gajjar-alg/Hybrid-A09-Terraform-CI-CD#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
